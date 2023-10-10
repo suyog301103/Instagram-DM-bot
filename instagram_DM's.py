@@ -4,9 +4,9 @@ from selenium.webdriver.common.by import By
 import time
 from selenium.webdriver.common.keys import Keys
 
-TARGET="supraboss14"
-USERNAME="randomuser6562"
-PASSWORD="hellobancho"
+TARGET='TARGET_INSTAGRAM_ACCOUNT'
+USERNAME='YOUR_USERNAME'
+PASSWORD='YOUR_PASSWORD'
 
 class InstaMessager():
     def __init__(self) -> None:
@@ -39,7 +39,7 @@ class InstaMessager():
         text.send_keys(Keys.ENTER)
         time.sleep(1)
         text2=self.driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[2]/div/div/div/div[1]/div[1]/div[2]/section/div/div/div/div[1]/div/div[2]/div/div/div/div/div/div[2]/div/div/div[2]/div/div/div[2]/div/div[1]')
-        text2.send_keys("heyy niggaaa")
+        text2.send_keys("hello")
         time.sleep(1)
         text2.send_keys(Keys.ENTER)
             
